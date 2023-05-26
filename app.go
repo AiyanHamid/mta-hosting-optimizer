@@ -30,7 +30,7 @@ func main() {
 	}
 
 	http.HandleFunc("/mta-hosting-optimizer", getInstanceName)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8999", nil))
 }
 
 func getInstanceName(w http.ResponseWriter, r *http.Request) {

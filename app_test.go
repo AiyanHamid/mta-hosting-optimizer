@@ -34,6 +34,12 @@ func TestGetInefficientInstance(t *testing.T) {
 	if len(result) != len(expectedResult) {
 		t.Errorf("Expected %d inefficient instances, but got %d", len(expectedResult), len(result))
 	}
+
+	//for i, instance := range result {
+	//	if instance != expectedResult[i] {
+	//		t.Errorf("Expected inefficient instance '%s', but got '%s'", expectedResult[i], instance)
+	//	}
+	//}
 }
 
 func TestGetInstanceName(t *testing.T) {
